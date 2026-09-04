@@ -112,7 +112,19 @@ input::placeholder, textarea::placeholder { color: var(--ink-soft); opacity: 1; 
 .room-title { align-items: center; display: flex; gap: 6px; }
 .rename-form { align-items: center; display: flex; gap: 3px; }
 .rename-form input { font-size: 18px; height: 38px; max-width: 340px; padding: 0 9px; width: 50vw; }
+.transcript-region { display: grid; grid-template-columns: minmax(0, 1fr) auto; min-height: 0; }
 .transcript { overflow-y: auto; padding: 28px clamp(20px, 5vw, 72px) 42px; scroll-behavior: smooth; }
+.transcript-rail { border-left: 1px solid var(--rule); min-height: 0; overflow-y: auto; padding: 28px 0 42px; width: 178px; }
+.rail-title { color: var(--ink-soft); font-size: 10px; font-weight: 650; letter-spacing: .09em; margin: 0 0 11px; padding: 0 18px; text-transform: uppercase; }
+.rail-list, .rail-list ol { list-style: none; margin: 0; padding: 0; }
+.rail-group + .rail-group { margin-top: 15px; }
+.rail-entry { align-items: center; background: transparent; border: 0; color: var(--ink-soft); cursor: pointer; display: grid; gap: 9px; grid-template-columns: 7px minmax(0, 1fr); padding: 6px 18px; text-align: left; width: 100%; }
+.rail-entry:hover { background: rgba(19, 38, 45, .06); color: var(--ink); }
+.rail-mark { height: 7px; width: 7px; }
+.rail-entry.own { color: var(--ink); font-weight: 650; }
+.rail-entry.own .rail-mark { background: var(--amber); }
+.rail-entry.active { box-shadow: inset 3px 0 0 var(--cobalt); color: var(--cobalt); font-weight: 650; }
+.rail-label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .message-entry { border-bottom: 1px solid #dce5e5; max-width: 72ch; padding: 18px 0 22px; }
 .message-entry:first-child { padding-top: 4px; }
 .message-entry.agent { margin-left: clamp(16px, 6vw, 76px); position: relative; }
@@ -223,6 +235,7 @@ input::placeholder, textarea::placeholder { color: var(--ink-soft); opacity: 1; 
   .key-control { max-width: 300px; }
   .key-label { display: none; }
   .workspace-grid { grid-template-columns: 220px minmax(390px, 1fr) 275px; }
+  .transcript-rail { display: none; }
 }
 
 @media (max-width: 760px) {
@@ -269,6 +282,7 @@ input::placeholder, textarea::placeholder { color: var(--ink-soft); opacity: 1; 
   .icon-button { height: 44px; min-height: 44px; min-width: 44px; width: 44px; }
   .sequence-actions .icon-button { height: 44px; width: 38px; }
   .sequence-row { min-height: 88px; }
+  .rail-entry { padding: 11px 18px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
