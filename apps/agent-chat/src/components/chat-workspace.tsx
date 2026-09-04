@@ -21,8 +21,10 @@ import { FormEvent, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { ChatList } from "@/components/chat-list";
 import { useRequestyKey } from "@/components/requesty-key-provider";
+import { TranscriptRail } from "@/components/transcript-rail";
 import { createClientTurnId } from "@/lib/client-turn-id";
 import { CHAT_MESSAGE_MAX_CHARACTERS } from "@/lib/limits";
+import { buildTranscriptOutline } from "@/lib/transcript-outline";
 import type { Agent, ChatDetail, ChatSummary, EvaluationStatus } from "@/lib/types";
 
 type RunState = Record<string, EvaluationStatus | "queued">;
@@ -55,7 +57,9 @@ export function ChatWorkspace({ initialChat, chats, agents }: { initialChat: Cha
   const [title, setTitle] = useState(chat.title);
   const [selectedAgent, setSelectedAgent] = useState("");
   const transcriptEnd = useRef<HTMLDivElement>(null);
+  const transcriptRef = useRef<HTMLDivElement>(null);
 
+  const outline = useMemo(() => buildTranscriptOutline(chat.messages), [chat.messages]);
   const invitedIds = useMemo(() => new Set(chat.roomAgents.map((agent) => agent.id)), [chat.roomAgents]);
   const availableAgents = agents.filter((agent) => !invitedIds.has(agent.id));
   const latestRunState = useMemo<RunState>(() => Object.fromEntries(
@@ -212,29 +216,32 @@ export function ChatWorkspace({ initialChat, chats, agents }: { initialChat: Cha
             <button className="icon-button danger" type="button" onClick={removeRoom} aria-label="Delete room"><Trash2 size={16} /></button>
           </header>
 
-          <div className="transcript" aria-live="polite">
-            {chat.messages.length === 0 && !optimisticContent ? (
-              <div className="conversation-empty">
-                <FlaskConical size={32} />
-                <h2>The bench is ready.</h2>
-                <p>{chat.roomAgents.length ? "Submit a prompt. Each specialist will inspect it in the order shown." : "Invite agents from the panel before starting, or save a note without them."}</p>
-              </div>
-            ) : chat.messages.map((message) => (
-              <article key={message.id} className={`message-entry ${message.role}`}>
-                <div className="message-meta">
-                  <span>{message.role === "user" ? "You" : message.agentName ?? "Agent"}</span>
-                  <time dateTime={message.createdAt}>{time(message.createdAt)}</time>
+          <div className="transcript-region">
+            <div className="transcript" ref={transcriptRef} aria-live="polite">
+              {chat.messages.length === 0 && !optimisticContent ? (
+                <div className="conversation-empty">
+                  <FlaskConical size={32} />
+                  <h2>The bench is ready.</h2>
+                  <p>{chat.roomAgents.length ? "Submit a prompt. Each specialist will inspect it in the order shown." : "Invite agents from the panel before starting, or save a note without them."}</p>
                 </div>
-                <p>{message.content}</p>
-              </article>
-            ))}
-            {optimisticContent && (
-              <article className="message-entry user pending">
-                <div className="message-meta"><span>You</span><span>sending</span></div>
-                <p>{optimisticContent}</p>
-              </article>
-            )}
-            <div ref={transcriptEnd} />
+              ) : chat.messages.map((message) => (
+                <article key={message.id} data-message-id={message.id} className={`message-entry ${message.role}`}>
+                  <div className="message-meta">
+                    <span>{message.role === "user" ? "You" : message.agentName ?? "Agent"}</span>
+                    <time dateTime={message.createdAt}>{time(message.createdAt)}</time>
+                  </div>
+                  <p>{message.content}</p>
+                </article>
+              ))}
+              {optimisticContent && (
+                <article className="message-entry user pending">
+                  <div className="message-meta"><span>You</span><span>sending</span></div>
+                  <p>{optimisticContent}</p>
+                </article>
+              )}
+              <div ref={transcriptEnd} />
+            </div>
+            {outline.length > 0 && <TranscriptRail groups={outline} scrollRef={transcriptRef} />}
           </div>
 
           <form className="composer" onSubmit={send}>
