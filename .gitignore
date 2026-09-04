@@ -40,6 +40,8 @@ downloads/
 eggs/
 .eggs/
 lib/
+!apps/agent-chat/src/lib/
+!apps/agent-chat/src/lib/**
 lib64/
 parts/
 sdist/

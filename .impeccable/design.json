@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-04T02:46:08Z",
+  "title": "Design System: PocketFlow Rooms",
+  "extensions": {
+    "colorMeta": {
+      "paper": { "role": "neutral", "displayName": "Mineral Paper", "canonical": "#edf3f2", "tonalRamp": ["oklch(15% 0.0065 185.3)", "oklch(27% 0.0065 185.3)", "oklch(39% 0.0065 185.3)", "oklch(51% 0.0065 185.3)", "oklch(63% 0.0065 185.3)", "oklch(75% 0.0065 185.3)", "oklch(87% 0.0065 185.3)", "oklch(95% 0.0065 185.3)"] },
+      "paper-bright": { "role": "neutral", "displayName": "Bright Ledger", "canonical": "#f8fbfa", "tonalRamp": ["oklch(15% 0.0034 174.5)", "oklch(27% 0.0034 174.5)", "oklch(39% 0.0034 174.5)", "oklch(51% 0.0034 174.5)", "oklch(63% 0.0034 174.5)", "oklch(75% 0.0034 174.5)", "oklch(87% 0.0034 174.5)", "oklch(95% 0.0034 174.5)"] },
+      "paper-blue": { "role": "neutral", "displayName": "Blue Laboratory Paper", "canonical": "#e3ebed", "tonalRamp": ["oklch(15% 0.0090 214.3)", "oklch(27% 0.0090 214.3)", "oklch(39% 0.0090 214.3)", "oklch(51% 0.0090 214.3)", "oklch(63% 0.0090 214.3)", "oklch(75% 0.0090 214.3)", "oklch(87% 0.0090 214.3)", "oklch(95% 0.0090 214.3)"] },
+      "ink": { "role": "neutral", "displayName": "Carbon Ink", "canonical": "#13262d", "tonalRamp": ["oklch(15% 0.0281 223.7)", "oklch(27% 0.0281 223.7)", "oklch(39% 0.0281 223.7)", "oklch(51% 0.0281 223.7)", "oklch(63% 0.0281 223.7)", "oklch(75% 0.0281 223.7)", "oklch(87% 0.0281 223.7)", "oklch(95% 0.0281 223.7)"] },
+      "ink-soft": { "role": "neutral", "displayName": "Soft Carbon", "canonical": "#52656a", "tonalRamp": ["oklch(15% 0.0243 215.5)", "oklch(27% 0.0243 215.5)", "oklch(39% 0.0243 215.5)", "oklch(51% 0.0243 215.5)", "oklch(63% 0.0243 215.5)", "oklch(75% 0.0243 215.5)", "oklch(87% 0.0243 215.5)", "oklch(95% 0.0243 215.5)"] },
+      "rule": { "role": "neutral", "displayName": "Hairline Rule", "canonical": "#bdcbce", "tonalRamp": ["oklch(15% 0.0159 212.0)", "oklch(27% 0.0159 212.0)", "oklch(39% 0.0159 212.0)", "oklch(51% 0.0159 212.0)", "oklch(63% 0.0159 212.0)", "oklch(75% 0.0159 212.0)", "oklch(87% 0.0159 212.0)", "oklch(95% 0.0159 212.0)"] },
+      "rule-strong": { "role": "neutral", "displayName": "Structural Rule", "canonical": "#8ba0a5", "tonalRamp": ["oklch(15% 0.0248 213.7)", "oklch(27% 0.0248 213.7)", "oklch(39% 0.0248 213.7)", "oklch(51% 0.0248 213.7)", "oklch(63% 0.0248 213.7)", "oklch(75% 0.0248 213.7)", "oklch(87% 0.0248 213.7)", "oklch(95% 0.0248 213.7)"] },
+      "cobalt": { "role": "primary", "displayName": "Instrument Cobalt", "canonical": "#174fc9", "tonalRamp": ["oklch(15% 0.1981 262.8)", "oklch(27% 0.1981 262.8)", "oklch(39% 0.1981 262.8)", "oklch(51% 0.1981 262.8)", "oklch(63% 0.1981 262.8)", "oklch(75% 0.1981 262.8)", "oklch(87% 0.1981 262.8)", "oklch(95% 0.1981 262.8)"] },
+      "cobalt-dark": { "role": "primary", "displayName": "Deep Instrument Cobalt", "canonical": "#103b95", "tonalRamp": ["oklch(15% 0.1553 262.5)", "oklch(27% 0.1553 262.5)", "oklch(39% 0.1553 262.5)", "oklch(51% 0.1553 262.5)", "oklch(63% 0.1553 262.5)", "oklch(75% 0.1553 262.5)", "oklch(87% 0.1553 262.5)", "oklch(95% 0.1553 262.5)"] },
+      "cobalt-soft": { "role": "primary", "displayName": "Washed Cobalt", "canonical": "#dbe6ff", "tonalRamp": ["oklch(15% 0.0361 266.7)", "oklch(27% 0.0361 266.7)", "oklch(39% 0.0361 266.7)", "oklch(51% 0.0361 266.7)", "oklch(63% 0.0361 266.7)", "oklch(75% 0.0361 266.7)", "oklch(87% 0.0361 266.7)", "oklch(95% 0.0361 266.7)"] },
+      "amber": { "role": "secondary", "displayName": "Assay Amber", "canonical": "#d87818", "tonalRamp": ["oklch(15% 0.1531 57.7)", "oklch(27% 0.1531 57.7)", "oklch(39% 0.1531 57.7)", "oklch(51% 0.1531 57.7)", "oklch(63% 0.1531 57.7)", "oklch(75% 0.1531 57.7)", "oklch(87% 0.1531 57.7)", "oklch(95% 0.1531 57.7)"] },
+      "amber-soft": { "role": "secondary", "displayName": "Dilute Amber", "canonical": "#ffebcc", "tonalRamp": ["oklch(15% 0.0460 78.8)", "oklch(27% 0.0460 78.8)", "oklch(39% 0.0460 78.8)", "oklch(51% 0.0460 78.8)", "oklch(63% 0.0460 78.8)", "oklch(75% 0.0460 78.8)", "oklch(87% 0.0460 78.8)", "oklch(95% 0.0460 78.8)"] },
+      "red": { "role": "tertiary", "displayName": "Failure Red", "canonical": "#a83232", "tonalRamp": ["oklch(15% 0.1543 24.8)", "oklch(27% 0.1543 24.8)", "oklch(39% 0.1543 24.8)", "oklch(51% 0.1543 24.8)", "oklch(63% 0.1543 24.8)", "oklch(75% 0.1543 24.8)", "oklch(87% 0.1543 24.8)", "oklch(95% 0.1543 24.8)"] },
+      "green": { "role": "tertiary", "displayName": "Verified Green", "canonical": "#1f785d", "tonalRamp": ["oklch(15% 0.0929 168.1)", "oklch(27% 0.0929 168.1)", "oklch(39% 0.0929 168.1)", "oklch(51% 0.0929 168.1)", "oklch(63% 0.0929 168.1)", "oklch(75% 0.0929 168.1)", "oklch(87% 0.0929 168.1)", "oklch(95% 0.0929 168.1)"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Lobby proposition only." },
+      "headline": { "displayName": "Headline", "purpose": "Major operational page headings." },
+      "title": { "displayName": "Title", "purpose": "Room and section titles." },
+      "body": { "displayName": "Body", "purpose": "Transcript and explanatory copy." },
+      "label": { "displayName": "Label", "purpose": "Compact uppercase metadata and controls." }
+    },
+    "shadows": [
+      { "name": "selected-record", "value": "0 7px 19px rgba(45, 63, 68, .08)", "purpose": "Lifts only the active room row." },
+      { "name": "connected-signal", "value": "0 2px 9px rgba(111, 224, 178, .35)", "purpose": "Marks the credential-ready indicator." },
+      { "name": "running-assay-low", "value": "0 2px 5px rgba(216, 120, 24, .15)", "purpose": "Low point of the running evaluation pulse." },
+      { "name": "running-assay-high", "value": "0 5px 18px rgba(216, 120, 24, .5)", "purpose": "High point of the running evaluation pulse." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(.16, 1, .3, 1)", "purpose": "Agent register row transitions." },
+      { "name": "assay-pulse", "value": "1.2s ease-in-out infinite", "purpose": "Running evaluation and loading signal." },
+      { "name": "spin", "value": "1s linear infinite", "purpose": "Busy action icons." },
+      { "name": "reduced-motion", "value": ".01ms; 1 iteration", "purpose": "Collapses animation and smooth scrolling when reduced motion is requested." }
+    ],
+    "breakpoints": [
+      { "name": "compact-desktop", "value": "980px" },
+      { "name": "single-pane", "value": "760px" },
+      { "name": "coarse-pointer", "value": "(pointer: coarse)" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The standard cobalt action for creating or saving a record.",
+      "html": "<button class=\"ds-primary-button\" type=\"button\">Create agent</button>",
+      "css": ".ds-primary-button { align-items: center; background: var(--cobalt, #174fc9); border: 0; border-radius: 0; color: white; cursor: pointer; display: inline-flex; font-family: \"Archivo Variable\", \"Arial Narrow\", sans-serif; font-weight: 650; justify-content: center; min-height: 44px; padding: 0 18px; } .ds-primary-button:hover { background: var(--cobalt-dark, #103b95); } .ds-primary-button:focus-visible { outline: 3px solid var(--amber, #d87818); outline-offset: 3px; } .ds-primary-button:active { background: var(--cobalt-dark, #103b95); } .ds-primary-button:disabled { background: #708186; cursor: not-allowed; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "The square ledger field used for names, models, prompts, and messages.",
+      "html": "<label class=\"ds-field-label\" for=\"ds-agent-name\">Agent name</label><input class=\"ds-field\" id=\"ds-agent-name\" placeholder=\"Evidence checker\" />",
+      "css": ".ds-field-label { color: var(--ink-soft, #52656a); display: block; font-family: \"Archivo Variable\", \"Arial Narrow\", sans-serif; font-size: 11px; font-weight: 650; letter-spacing: .06em; margin-bottom: 7px; text-transform: uppercase; } .ds-field { background: var(--paper-bright, #f8fbfa); border: 1px solid var(--rule-strong, #8ba0a5); border-radius: 0; color: var(--ink, #13262d); font-family: \"Archivo Variable\", \"Arial Narrow\", sans-serif; height: 45px; outline: 0; padding: 12px 13px; width: 100%; } .ds-field::placeholder { color: var(--ink-soft, #52656a); opacity: 1; } .ds-field:hover { border-color: var(--ink-soft, #52656a); } .ds-field:focus { border-color: var(--cobalt, #174fc9); box-shadow: 0 0 0 2px var(--cobalt-soft, #dbe6ff); } .ds-field:focus-visible { outline: 3px solid var(--amber, #d87818); outline-offset: 3px; }"
+    },
+    {
+      "name": "Primary Navigation Link",
+      "kind": "nav",
+      "description": "A full-height header link with a cobalt active register mark.",
+      "html": "<nav class=\"ds-primary-nav\" aria-label=\"Primary navigation\"><a class=\"ds-nav-link ds-active\" href=\"#\" aria-current=\"page\">Chats</a><a class=\"ds-nav-link\" href=\"#\">Agents</a></nav>",
+      "css": ".ds-primary-nav { align-items: stretch; background: var(--ink, #13262d); display: flex; gap: 4px; height: 74px; } .ds-nav-link { align-items: center; color: #bdcaca; display: flex; font-family: \"Archivo Variable\", \"Arial Narrow\", sans-serif; font-weight: 560; padding: 0 20px; position: relative; text-decoration: none; } .ds-nav-link::after { background: transparent; bottom: 0; content: \"\"; height: 3px; left: 20px; position: absolute; right: 20px; } .ds-nav-link:hover, .ds-nav-link:active, .ds-nav-link.ds-active { color: white; } .ds-nav-link.ds-active::after { background: #8fb0ff; } .ds-nav-link:focus-visible { outline: 3px solid var(--amber, #d87818); outline-offset: -3px; }"
+    },
+    {
+      "name": "Active Room Record",
+      "kind": "card",
+      "description": "The selected room is a lifted ledger row, not a rounded card.",
+      "html": "<a class=\"ds-room-record ds-active\" href=\"#\"><span class=\"ds-room-signal\" aria-hidden=\"true\"></span><span class=\"ds-room-copy\"><strong>Research review</strong><small>12 messages</small></span></a>",
+      "css": ".ds-room-record { align-items: flex-start; color: var(--ink, #13262d); display: flex; gap: 9px; padding: 13px 10px; text-decoration: none; } .ds-room-record:hover { background: rgba(255, 255, 255, .55); } .ds-room-record.ds-active { background: var(--paper-bright, #f8fbfa); box-shadow: 0 7px 19px rgba(45, 63, 68, .08); } .ds-room-record:focus-visible { outline: 3px solid var(--amber, #d87818); outline-offset: 3px; } .ds-room-signal { border: 2px solid var(--rule-strong, #8ba0a5); border-radius: 50%; height: 10px; margin-top: 4px; width: 10px; } .ds-active .ds-room-signal { border-color: var(--cobalt, #174fc9); } .ds-room-copy { display: grid; font-family: \"Archivo Variable\", \"Arial Narrow\", sans-serif; gap: 5px; } .ds-room-copy small { color: var(--ink-soft, #52656a); font-size: 11px; }"
+    },
+    {
+      "name": "Numbered Agent Sequence",
+      "kind": "custom",
+      "description": "The signature rail exposes ordered evaluation and explicit status.",
+      "html": "<article class=\"ds-sequence-row ds-state-running\"><div class=\"ds-sequence-rail\"><span>2</span><i></i></div><div class=\"ds-sequence-copy\"><strong>Evidence checker</strong><code>openai/gpt-4o-mini</code><small>running</small></div></article>",
+      "css": ".ds-sequence-row { color: var(--ink, #13262d); display: grid; font-family: \"Archivo Variable\", \"Arial Narrow\", sans-serif; grid-template-columns: 29px minmax(0, 1fr); min-height: 74px; } .ds-sequence-rail { align-items: center; display: flex; flex-direction: column; } .ds-sequence-rail span { align-items: center; background: var(--paper-bright, #f8fbfa); border: 1px solid var(--rule-strong, #8ba0a5); border-radius: 50%; display: flex; font-size: 10px; font-variant-numeric: tabular-nums; height: 24px; justify-content: center; width: 24px; } .ds-sequence-rail i { background: var(--rule-strong, #8ba0a5); flex: 1; width: 1px; } .ds-sequence-copy { display: grid; gap: 3px; padding: 3px 6px 16px 8px; } .ds-sequence-copy code { color: var(--ink-soft, #52656a); font-family: inherit; font-size: 10px; } .ds-sequence-copy small { color: var(--ink-soft, #52656a); font-size: 9px; letter-spacing: .08em; text-transform: uppercase; } .ds-state-running .ds-sequence-rail span { animation: ds-assay-pulse 1.2s ease-in-out infinite; background: var(--amber, #d87818); border-color: var(--amber, #d87818); } .ds-state-responded .ds-sequence-rail span { background: var(--green, #1f785d); border-color: var(--green, #1f785d); color: white; } .ds-state-abstained .ds-sequence-rail span { background: var(--paper-blue, #e3ebed); } .ds-state-failed .ds-sequence-rail span { background: var(--red, #a83232); border-color: var(--red, #a83232); color: white; } .ds-sequence-row:focus-within { outline: 3px solid var(--amber, #d87818); outline-offset: 3px; } @keyframes ds-assay-pulse { 0%, 100% { box-shadow: 0 2px 5px rgba(216, 120, 24, .15); } 50% { box-shadow: 0 5px 18px rgba(216, 120, 24, .5); } } @media (prefers-reduced-motion: reduce) { .ds-state-running .ds-sequence-rail span { animation-duration: .01ms; animation-iteration-count: 1; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Observation Bench",
+    "overview": "PocketFlow Rooms treats a multi-agent conversation as a research-laboratory observation ledger. Pale mineral surfaces, carbon ink, cobalt instruments, amber assay states, ruled registers, and numbered specimen rails make sequential evaluation tangible without imitating a conventional messenger.\n\nThe system is dense, calm, and operational. Information is separated by tonal fields and hairline rules; square controls feel like instruments; color appears only when it communicates control, identity, progress, or outcome. The transcript remains the dominant reading surface while surrounding panes expose room history and evaluation order.",
+    "keyCharacteristics": [
+      "Pale mineral surfaces organized as ruled registers.",
+      "Carbon text with restrained cobalt controls and agent markers.",
+      "Amber activity, green success, and red failure states used semantically.",
+      "Square controls and containers paired with circular sequence markers.",
+      "Compact uppercase metadata supporting larger editorial headings."
+    ],
+    "rules": [
+      { "name": "The Instrument-and-Assay Rule", "body": "Cobalt identifies controls and agent-origin cues; amber is reserved for focus and work actively under evaluation.", "section": "colors" },
+      { "name": "The Tonal Ledger Rule", "body": "Separate regions with the three paper tones and hairline rules before introducing shadow.", "section": "colors" },
+      { "name": "The One-Instrument Typeface Rule", "body": "Use Archivo across prose, controls, labels, models, and numerals; hierarchy comes from scale, tracking, weight, and case rather than a decorative pairing.", "section": "typography" },
+      { "name": "The Metadata Compression Rule", "body": "Uppercase labels are compact and tracked, never used for transcript prose or long descriptions.", "section": "typography" },
+      { "name": "The Dominant Transcript Rule", "body": "On wide screens, preserve the complete three-pane sequence while granting flexible space to the transcript; on narrow screens, show one readable pane rather than compressing all three.", "section": "layout" },
+      { "name": "The Flat-Bench Rule", "body": "Surfaces remain flat at rest; use rules and paper tones for structure, reserving shadow for selection or live state.", "section": "elevation" },
+      { "name": "The Circle-Means-State Rule", "body": "Circular geometry marks position or live status; general controls and containers stay square.", "section": "shapes" }
+    ],
+    "dos": [
+      "Do preserve the three paper tones and ruled boundaries as the primary spatial hierarchy.",
+      "Do use cobalt for operable controls, active navigation, and agent-origin markers.",
+      "Do reserve amber for keyboard focus and the agent actively under evaluation.",
+      "Do keep transcript content readable at no more than 72ch and reveal one pane at a time below 760px.",
+      "Do keep status text explicit alongside color and maintain 44px coarse-pointer targets."
+    ],
+    "donts": [
+      "Don't turn transcript entries into rounded chat bubbles or floating cards.",
+      "Don't add corner rounding to general controls, fields, panes, or register rows.",
+      "Don't use shadow as routine decoration; it signals selection, connectivity, or live evaluation.",
+      "Don't use circular geometry for general actions or containers.",
+      "Don't use color alone to communicate queued, running, passed, responded, or failed states."
+    ]
+  }
+}

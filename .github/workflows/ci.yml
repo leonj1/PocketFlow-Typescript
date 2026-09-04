@@ -36,3 +36,36 @@ jobs:
         with:
           name: dist-${{ matrix.node-version }}
           path: dist/
+
+  agent-chat:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            apps/agent-chat/package-lock.json
+
+      - name: Build PocketFlow
+        run: |
+          npm ci
+          npm run build
+
+      - name: Install agent chat
+        working-directory: apps/agent-chat
+        run: npm ci
+
+      - name: Check agent chat
+        working-directory: apps/agent-chat
+        env:
+          DATABASE_PATH: .data/ci.db
+        run: |
+          npm run lint
+          npm run typecheck
+          npm test
+          npm run build
