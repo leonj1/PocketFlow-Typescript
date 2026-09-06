@@ -1,0 +1,25 @@
+# Dependencies and build artifacts (rebuilt inside the image)
+node_modules
+.next
+dist
+build
+coverage
+
+# Version control and CI
+.git
+.github
+
+# Non-runtime content
+docs
+cookbook
+
+# Tests are not part of the production build
+tests
+
+# Local environment and secrets
+.env
+.env.*
+
+# OS noise
+.DS_Store
+*.log
